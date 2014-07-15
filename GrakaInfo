@@ -1,0 +1,112 @@
+package spiele;
+
+public class GrakaInfo 
+{
+    
+    
+        private String marke;
+        private double preis;
+        private boolean dreiD;
+        private int takt;
+        private int speicher;
+      
+        public GrakaInfo () {
+
+            marke = "";
+            preis = 0;
+            dreiD = false;
+            takt = 0; 
+            speicher = 0;
+            }
+
+    GrakaInfo(String marke, int preis, boolean dreiD, int takt, int speicher) {
+       this.marke = marke;
+       this.preis = preis;
+       this.dreiD = dreiD;
+       this.takt = takt;
+       this.speicher = speicher;
+    }
+        
+
+                /**
+     * @param marke the marke to set
+     */
+                public void setMarke(String marke) {
+                    this.marke = marke;
+                }
+
+                /**
+                 * @param preis the preis to set
+                 */
+                public void setPreis(double preis) {
+                    this.preis = preis;
+                }
+
+                /**
+                 * @param dreiD the dreiD to set
+                 */
+                public void setDreiD(boolean dreiD) {
+                    this.dreiD = dreiD;
+                }
+
+                /**
+                 * @param takt the takt to set
+                 */
+                public void setTakt(int takt) {
+                    this.takt = takt;
+                }
+
+                /**
+                 * @param speicher the speicher to set
+                 */
+                public void setSpeicher(int speicher) {
+                    this.speicher = speicher;
+                }
+
+                /**
+                 * @return the marke
+                 */
+                public String getMarke() {
+                    return marke;
+                }
+
+                /**
+                 * @return the preis
+                 */
+                public double getPreis() {
+                    return preis;
+                }
+
+                /**
+                 * @return the dreiD
+                 */
+                public boolean isDreiD() {
+                    return dreiD;
+                }
+
+                /**
+                 * @return the takt
+                 */
+                public int getTakt() {
+                    return takt;
+                }
+
+                /**
+                 * @return the speicher
+                 */
+                public int getSpeicher() {
+                    return speicher;
+                }
+
+
+
+        @Override
+        public String toString(){
+        return "("+getMarke()+","+getPreis()+",,"+isDreiD()+",,"+getTakt()+",,"+getSpeicher()+",)";
+        }
+        
+
+
+   
+
+}
